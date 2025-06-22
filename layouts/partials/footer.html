@@ -1,5 +1,17 @@
 {{- if not (.Param "hideFooter") }}
 <footer class="footer">
+   <div style="display: flex; gap: 0.25rem; justify-content: center">
+        <a href="https://graphics-programming.org/webring/frogs/rtarun9/prev">⬅️</a>
+        <a href="https://graphics-programming.org/webring/">
+        <img
+        src="https://graphics-programming.org/img/froge.webp"
+        alt="a friendly froge"
+        style="object-fit: contain; width: 1.5em; height: 1.5em"
+        />
+        </a>
+        <a href="https://graphics-programming.org/webring/frogs/rtarun9/next">➡️</a>
+    </div>
+
     {{- if site.Copyright }}
     <span>{{ site.Copyright | markdownify }}</span>
     {{- else }}
